@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>Home</title>
+    <title>G-Republica</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -17,13 +17,14 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
     <!-- Styles -->
+    <link href="{{ asset('css/style.css') }}" rel="stylesheet">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
+                <a class="navbar-brand" href="{{ url('/home') }}">
                   G-REPÚBLICA
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
@@ -40,6 +41,7 @@
                     <ul class="navbar-nav ml-auto">
                         <!-- Authentication Links -->
                         @guest
+                            
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
                             </li>
@@ -56,20 +58,25 @@
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                                     
-                                    <a class="dropdown-item">
+                                    <a class="dropdown-item" href="{{ route ('perfil') }}" >
+                                        
                                         {{ __('Perfil') }}
+
                                     </a>
                                     <a class="dropdown-item">
-                                        {{ __('Contas') }}
+                                        {{ __('Notificações') }}
                                     </a>
                                     <a class="dropdown-item">
-                                        {{ __('Estatística') }}
+                                        {{ __('Interesses') }}
                                     </a>
                                     <a class="dropdown-item">
-                                        {{ __('Histórico') }}
+                                        {{ __('Configurações da conta') }}
                                     </a>
                                     <a class="dropdown-item">
-                                        {{ __('Configuração') }}
+                                        {{ __('Seus anúncios') }}
+                                    </a>
+                                    <a class="dropdown-item">
+                                        {{ __('Ajuda') }}
                                     </a>
                                     
                                     <a class="dropdown-item" href="{{ route('logout') }}"
@@ -79,7 +86,6 @@
                                     </a>
 
                                     
-
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                                         @csrf
                                     </form>

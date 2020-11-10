@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Nunito);@charset "UTF-8";
+/* @import url(https://fonts.googleapis.com/css?family=Nunito);@charset "UTF-8"; */
 
 /*!
  * Bootstrap v4.5.2 (https://getbootstrap.com/)
@@ -73,6 +73,7 @@ body {
   color: #212529;
   text-align: left;
   background-color: #f8fafc;
+  background: url(../../img/pexels-jimmy-chan-1055297.png);
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
