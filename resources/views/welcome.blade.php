@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,7 +12,8 @@
 
         <!-- Styles -->
         <style>
-            html, body {
+            html,
+            body {
                 background: url(../../img/chicago.jpg);
                 color: #636b6f;
                 font-family: 'Nunito', sans-serif;
@@ -24,7 +26,11 @@
                 background-position: center;
                 /* background-repeat: no-repeat; */
                 background-size: cover;
-                
+
+            }
+            a:link {
+                text-decoration: none;
+                color: white;
             }
 
             .full-height {
@@ -35,16 +41,19 @@
                 align-items: center;
                 display: flex;
                 justify-content: center;
+
             }
 
             .position-ref {
                 position: relative;
+
             }
 
             .top-right {
                 position: absolute;
                 right: 10px;
                 top: 18px;
+                
             }
 
             .content {
@@ -58,8 +67,9 @@
                 font-size: 84px;
             }
 
-            .links > a {
-                color: #636b6f;
+            .links>a {
+                /* color: #636b6f; */
+                color: white;
                 padding: 0 25px;
                 font-size: 13px;
                 font-weight: 600;
@@ -80,41 +90,75 @@
                 width: 685px;
                 margin-top: -84px;
             }
+
+            footer {
+                text-align: center;
+                padding: 1px 0px 1px 0;
+                background-color: #373333;
+                color: white;
+                line-height: 0.6;
+            }
+            .slow{
+                margin-left: -925px;
+                line-height: 0.6;
+                
+            }
+            .down{
+                margin-top: -74px;
+                margin-left: -560px;
+                line-height: 0.6;
+
+            }
         </style>
     </head>
+
     <body>
         <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
+            <div class="navBar">
 
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
-                        @endif
+                @if (Route::has('login'))
+                <div class="top-right links">
+                   
+                    @auth
+                    <a href="{{ url('/home') }}">Home</a>
+                    @else
+
+                    <a href="{{ route('login') }}">Login</a>
+
+                    @if (Route::has('register'))
+                    <a href="{{ route('register') }}">Register</a>
+                    @endif
                     @endauth
                 </div>
-            @endif
+                @endif
+            </div>
 
             <div class="content">
-                <!-- <img src="{{ public_path('img/picture.jpg') }}"> -->
+
+                <!-- <img src="{!! asset('img/chicago.jpg') !!}"> -->
                 <div class="title m-b-md">
                     G REPÚBLICAS
                 </div>
 
-                <!-- <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://vapor.laravel.com">Vapor</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div> -->
+
             </div>
         </div>
     </body>
+    <footer>
+        
+        <div class="slow">
+            <p><a href="#">Quem Somos</a></p>
+            <p><a href="#">Atendimento</a></p>
+            <p><a href="#">FAQ</a></p>
+        </div>
+
+        <div class="down">
+            <p><a href="#">Suporte</a></p>
+            <p><a href="#">G- Republica PRO</a></p>
+            <p><a href="#">Central de Ajuda</a></p>
+        </div>
+        <br>
+        <p>©Copyright Mazarafa 2020</p>
+    </footer>
+
 </html>
