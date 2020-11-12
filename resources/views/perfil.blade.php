@@ -45,7 +45,7 @@
                                 <a class="dropdown-item" href="{{ route('encerrarconta') }}">
                                     {{ __('Encerrar Conta') }}
                                 </a>
-                                
+
                             </li>
                         </ul>
                     </div>
@@ -56,88 +56,69 @@
         <div class="col-md-9">
             <div class="profile-content">
                 <form method="post">
-
-                    <!-- DADOS PESSOAIS-->
-                    <fieldset>
+                    <form class="needs-validation" novalidate>
                         <legend>Dados Pessoais</legend>
-                        <table cellspacing="10">
-                            <tr>
-                                <td>
-                                    <label for="nome">Nome: </label>
-                                </td>
-                                <td>
-                                    <input type="text" name="email">
-                                </td>
-                                <td>
-                                    <label for="sobrenome">Sobrenome: </label>
-                                </td>
-                                <td>
-                                    <input type="text" name="sobrenome">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <label>Nascimento: </label>
-                                </td>
-                                <td>
-                                    <input type="text" name="dia" size="2" maxlength="2" value="dd">
-                                    <input type="text" name="mes" size="2" maxlength="2" value="mm">
-                                    <input type="text" name="ano" size="4" maxlength="4" value="aaaa">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <label for="rg">RG: </label>
-                                </td>
-                                <td>
-                                    <input type="text" name="rg" size="13" maxlength="13">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <label>CPF:</label>
-                                </td>
-                                <td>
-                                    <input type="text" name="cpf" size="9" maxlength="9"> - <input type="text" name="cpf2" size="2" maxlength="2">
-                                </td>
-                            </tr>
-                        </table>
-                    </fieldset>
-
-                    <br />
-                    <!-- ENDEREÇO -->
-                    <fieldset>
-                        <legend>Dados de Endereço</legend>
-                        <table cellspacing="10">
-
-                            <tr>
-                                <td>
-                                    <label for="rua">Rua:</label>
-                                </td>
-                                <td>
-                                    <input type="text" name="rua">
-                                </td>
-                                <td>
-                                    <label for="numero">Numero:</label>
-                                </td>
-                                <td>
-                                    <input type="text" name="numero" size="4">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <label for="bairro">Bairro: </label>
-                                </td>
-                                <td>
-                                    <input type="text" name="bairro">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <label for="estado">Estado:</label>
-                                </td>
-                                <td>
-                                    <select name="estado">
+                        <br>
+                        <div class="form-row">
+                            <div class="col-md-4 mb-3">
+                                <label for="validationCustom01">Primeiro nome</label>
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="Nome"  required>
+                                <div class="valid-feedback">
+                                    Tudo certo!
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label for="validationCustom02">Sobrenome</label>
+                                <input type="text" class="form-control" id="validationCustom02" placeholder="Sobrenome"  required>
+                                <div class="valid-feedback">
+                                    Tudo certo!
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label for="validationCustomUsername">Usuário</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="inputGroupPrepend">@</span>
+                                    </div>
+                                    <input type="text" class="form-control" id="validationCustomUsername" placeholder="Usuário" aria-describedby="inputGroupPrepend" required>
+                                    <div class="invalid-feedback">
+                                        Por favor, escolha um nome de usuário.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- opa -->
+                        <div class="form-row">
+                            <div class="col-md-4 mb-3">
+                                <label for="validationCustom01">CPF</label>
+                                <input type="text" class="form-control" id="CPF" placeholder="000.000.000-00" name="CPF" size="13" maxlength="14" required>
+                                <!-- <input type="text" class="form-control" id="validationCustom01" placeholder="CPF"  required> -->
+                                <div class="valid-feedback">
+                                    Tudo certo!
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label for="validationCustom02">RG</label>
+                                <input type="text" class="form-control" id="rg" placeholder="00.000.000-0" name="rg" size="12" maxlength="12" required>
+                                <!-- <input type="text" class="form-control" id="validationCustom02" placeholder="Sobrenome"  required> -->
+                                <div class="valid-feedback">
+                                    Tudo certo!
+                                </div>
+                            </div>
+                           
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-6 mb-3">
+                                <label for="validationCustom03">Cidade</label>
+                                <input type="text" class="form-control" id="validationCustom03" placeholder="Cidade" required>
+                                <div class="invalid-feedback">
+                                    Por favor, informe uma cidade válida.
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <label for="validationCustom04">Estado</label>
+                                <select name="estado">
+                                        <option value="">Selecione</option>
                                         <option value="ac">Acre</option>
                                         <option value="al">Alagoas</option>
                                         <option value="am">Amazonas</option>
@@ -166,78 +147,56 @@
                                         <option value="sp">São Paulo</option>
                                         <option value="to">Tocantins</option>
                                     </select>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <label for="cidade">Cidade: </label>
-                                </td>
-                                <td>
-                                    <input type="text" name="cidade">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <label for="cep">CEP: </label>
-                                </td>
-                                <td>
-                                    <input type="text" name="cep" size="5" maxlength="5"> - <input type="text" name="cep2" size="3" maxlength="3">
-                                </td>
-                            </tr>
-                        </table>
-                    </fieldset>
-                    <br />
+                                <!-- <input type="text" class="form-control" id="validationCustom04" placeholder="Estado" required> -->
+                                <div class="invalid-feedback">
+                                    Por favor, informe um estado válido.
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <label for="validationCustom05">CEP</label>
+                                <input type="text" class="form-control" id="validationCustom05" placeholder="CEP" required>
+                                <div class="invalid-feedback">
+                                    Por favor, informe um CEP válido.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                <label class="form-check-label" for="invalidCheck">
+                                    Concordo com os termos e condições
+                                </label>
+                                <div class="invalid-feedback">
+                                    Você deve concordar, antes de continuar.
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary" type="submit">Enviar</button>
+                    </form>
 
-                    <!-- DADOS DE LOGIN -->
-                    <fieldset>
-                        <legend>Dados de login</legend>
-                        <table cellspacing="10">
-                            <tr>
-                                <td>
-                                    <label for="email">E-mail: </label>
-                                </td>
-                                <td>
-                                    <input type="text" name="email">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <label for="imagem">Imagem de perfil:</label>
-                                </td>
-                                <td>
-                                    <input type="file" name="imagem">
+                    <script>
+                        // Exemplo de JavaScript inicial para desativar envios de formulário, se houver campos inválidos.
+                        (function() {
+                            'use strict';
+                            window.addEventListener('load', function() {
+                                // Pega todos os formulários que nós queremos aplicar estilos de validação Bootstrap personalizados.
+                                var forms = document.getElementsByClassName('needs-validation');
+                                // Faz um loop neles e evita o envio
+                                var validation = Array.prototype.filter.call(forms, function(form) {
+                                    form.addEventListener('submit', function(event) {
+                                        if (form.checkValidity() === false) {
+                                            event.preventDefault();
+                                            event.stopPropagation();
+                                        }
+                                        form.classList.add('was-validated');
+                                    }, false);
+                                });
+                            }, false);
+                        })();
+                    </script>
 
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <label for="login">Login de usuário: </label>
-                                </td>
-                                <td>
-                                    <input type="text" name="login">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <label for="pass">Senha: </label>
-                                </td>
-                                <td>
-                                    <input type="password" name="pass">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <label for="passconfirm">Confirme a senha: </label>
-                                </td>
-                                <td>
-                                    <input type="password" name="passconfirm">
-                                </td>
-                            </tr>
-                        </table>
-                    </fieldset>
-                    <br />
-                    <input type="submit">
-                    <input type="reset" value="Limpar">
+
+
                 </form>
             </div>
         </div>
