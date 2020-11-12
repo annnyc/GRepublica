@@ -68,8 +68,8 @@
                         esta opção não poderá ser revertida e você perderá todos seus dados.
                     <p>
                     <div class="profile-userbuttons">
-                        <button type="button" class="btn btn-success btn-sm">Salvar</button>
-                        <button type="button" class="btn btn-danger btn-sm">Cancelar</button>
+                        <!-- <button type="button" class="btn btn-success btn-sm">Salvar</button> -->
+                        <button type="button" class="btn btn-danger btn-sm">Encerrar conta</button>
                     </div>
                 </form>
             </div>
