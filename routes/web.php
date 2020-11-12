@@ -18,7 +18,11 @@ Route::get('/', function () {
 });
 Route::get('/perfil', function () {
     return view('perfil');
-})->name('amazon.perfil');
+})->name('GRepublica.perfil');
+
+Route::get('/encerrarconta', function () {
+    return view('encerrarconta');
+})->name('GRepublica.encerrarconta');
 
 
 
@@ -30,3 +34,4 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/perfil', 'PerfilController@index')->name('perfil');
+Route::get('/encerrarconta', 'EncerrarcontaController@index')->name('encerrarconta');
