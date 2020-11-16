@@ -20,6 +20,11 @@ Route::get('/perfil', function () {
     return view('perfil');
 })->name('GRepublica.perfil');
 
+Route::get('/assinatura', function () {
+    return view('perfil');
+})->name('GRepublica.assinatura');
+
+
 Route::get('/encerrarconta', function () {
     return view('encerrarconta');
 })->name('GRepublica.encerrarconta');
@@ -34,4 +39,5 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/perfil', 'PerfilController@index')->name('perfil');
+Route::get('/assinatura', 'AssinaturaController@index')->name('assinatura');
 Route::get('/encerrarconta', 'EncerrarcontaController@index')->name('encerrarconta');
