@@ -26,16 +26,15 @@
                     <!-- Nav option in user -->
                     <div class="profile-usermenu">
                         <ul class="navOptionT">
-                            <li >
+                            <li>
                                 <a class="dropdown-item" href="{{ route('perfil') }}">
                                     {{ __('Perfil') }}
                                 </a>
                             </li>
                             <li>
                                 <a class="dropdown-item" href="{{ route('assinatura') }}">
-                    
                                     {{ __('Assinatura') }}
-                               </a>
+                                </a>
                             </li>
                             <li>
                                 <a href="#">
@@ -56,22 +55,38 @@
         </div>
         <div class="col-md-9">
             <div class="profile-content">
-                <form method="post" style="margin-left: 35px;
+                <form method="post" style="margin-left: 5px;
                         margin-right: 35px;
                         /* justify-content: center; */
-                        text-align: justify;"
-                >
+                        text-align: justify;">
                     <fieldset>
-                        <legend>Encerrar conta</legend>
+                        <legend>Assinatura</legend>
                     </fieldset>
 
-                    <p><b>Aviso:</b> você tem certeza que deseja encerrar sua conta,
-                        esta opção não poderá ser revertida e você perderá todos seus dados.
-                    <p>
-                    <div class="profile-userbuttons">
-                        <!-- <button type="button" class="btn btn-success btn-sm">Salvar</button> -->
-                        <button type="button" class="btn btn-danger btn-sm">Encerrar conta</button>
+                    <div class="card" style="width: 18rem;">
+                        <img src="{!! asset('img/ape.jpg') !!}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">G-Republica PRO</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Cras justo odio</li>
+                            <li class="list-group-item">Dapibus ac facilisis in</li>
+                            <li class="list-group-item">Vestibulum at eros</li>
+                        </ul>
+                        <div class="card-body">
+                           
+                            <a href="#" class="card-link">Register</a>
+                        </div>
                     </div>
+
+                    
+
+                    
+
+
+
+
                 </form>
             </div>
         </div>
