@@ -63,17 +63,17 @@
                                         {{ __('Perfil') }}
 
                                     </a>
-                                    <a class="dropdown-item">
+                                    <!-- <a class="dropdown-item">
                                         {{ __('Notificações') }}
-                                    </a>
+                                    </a> -->
                                     <a class="dropdown-item">
                                         {{ __('Interesses') }}
                                     </a>
                                     <a class="dropdown-item">
-                                        {{ __('Configurações da conta') }}
+                                        {{ __('Seus anúncios') }}
                                     </a>
                                     <a class="dropdown-item">
-                                        {{ __('Seus anúncios') }}
+                                        {{ __('Configurações') }}
                                     </a>
                                     <a class="dropdown-item">
                                         {{ __('Ajuda') }}
