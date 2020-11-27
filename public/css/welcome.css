@@ -12,7 +12,22 @@ body {
     background-position: center;
     /* background-repeat: no-repeat; */
     background-size: cover;
+}
 
+a:link,
+a:visited {
+    text-decoration: none;
+    color:white;
+}
+
+a:hover {
+    text-decoration: underline;
+    color:white;
+}
+
+a:active {
+    text-decoration: none;
+    color:white;
 }
 
 a:link {

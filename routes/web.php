@@ -29,6 +29,10 @@ Route::get('/encerrarconta', function () {
     return view('encerrarconta');
 })->name('GRepublica.encerrarconta');
 
+Route::get('/about', function () {
+    return view('about');
+})->name('GRepublica.about');
+
 
 
 
@@ -38,3 +42,5 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/perfil', 'PerfilController@index')->name('perfil');
 Route::get('/assinatura', 'AssinaturaController@index')->name('assinatura');
 Route::get('/encerrarconta', 'EncerrarcontaController@index')->name('encerrarconta');
+
+Route::get('/about', 'AboutController@index')->name('about');
