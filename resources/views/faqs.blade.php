@@ -9,7 +9,7 @@
 
                 <div class="card-body">
                     <a href="#tab1" class="nav-link active"  role="tab" aria-controls="tab1" >
-                        <i class="mdi mdi-help-circle"></i> About
+                        <i class="mdi mdi-help-circle"></i> Frequently Asked Questions
                     </a>
 
                     <a href="#tab1" class="nav-link active"  role="tab" aria-controls="tab1" >

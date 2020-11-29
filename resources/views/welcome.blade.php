@@ -54,8 +54,12 @@
                     {{ __('Quem Somos') }}
                 </a>
             </p>
+
             <p><a>Atendimento</a></p>
-            <p><a>FAQ</a></p>
+
+            <p><a href="{{ route('faqs') }}">
+                    {{ __('FAQ') }}
+            </a></p>
         </div>
 
         <div class="down">

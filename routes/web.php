@@ -33,6 +33,10 @@ Route::get('/about', function () {
     return view('about');
 })->name('GRepublica.about');
 
+Route::get('/faqs', function () {
+    return view('faqs');
+})->name('GRepublica.faqs');
+
 
 
 
@@ -44,3 +48,4 @@ Route::get('/assinatura', 'AssinaturaController@index')->name('assinatura');
 Route::get('/encerrarconta', 'EncerrarcontaController@index')->name('encerrarconta');
 
 Route::get('/about', 'AboutController@index')->name('about');
+Route::get('/faqs', 'FaqsController@index')->name('faqs');
