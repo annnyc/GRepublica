@@ -8,8 +8,8 @@
 
 
                 <div class="card-body">
-                    <a href="{{ route('faqs') }}" class="nav-link active"  role="tab" aria-controls="tab1" >
-                        <i class="mdi mdi-help-circle"></i> Frequently Asked Questions
+                    <a href="{{ route('GPro') }}" class="nav-link active"  role="tab" aria-controls="tab1" >
+                        <i class="mdi mdi-help-circle"></i> G-Republica Pro
                     </a>
 
                     <a href="{{ route('home') }}" class="nav-link active"  role="tab" aria-controls="tab1" >

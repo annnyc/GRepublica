@@ -37,6 +37,10 @@ Route::get('/faqs', function () {
     return view('faqs');
 })->name('GRepublica.faqs');
 
+Route::get('/GPro', function () {
+    return view('GPro');
+})->name('GRepublica.GPro');
+
 
 
 
@@ -49,3 +53,4 @@ Route::get('/encerrarconta', 'EncerrarcontaController@index')->name('encerrarcon
 
 Route::get('/about', 'AboutController@index')->name('about');
 Route::get('/faqs', 'FaqsController@index')->name('faqs');
+Route::get('/GPro', 'GProController@index')->name('GPro');

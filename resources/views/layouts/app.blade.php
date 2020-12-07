@@ -64,9 +64,9 @@
                                         {{ __('Perfil') }}
 
                                     </a>
-                                    <!-- <a class="dropdown-item">
+                                    <a class="dropdown-item">
                                         {{ __('Notificações') }}
-                                    </a> -->
+                                    </a>
                                     <a class="dropdown-item">
                                         {{ __('Interesses') }}
                                     </a>
