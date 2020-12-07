@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>G-REPUBLICA</title>
+    <title href="{{ url('/') }}" >G-REPUBLICA</title>
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
@@ -57,18 +57,26 @@
 
             <p><a>Atendimento</a></p>
 
-            <p><a href="{{ route('faqs') }}">
+            <p>
+                <a href="{{ route('faqs') }}">
                     {{ __('FAQ') }}
-            </a></p>
+                </a>
+            </p>
         </div>
 
         <div class="down">
             <p><a>Parceirias</a></p>
-            <p><a>G- Republica PRO</a></p>
+            <!-- <p><a>G- Republica PRO</a></p> -->
+            <p>
+                <a href="{{ route('GPro') }}">
+                    {{ __('G-Republica PRO') }}
+                </a>
+            </p>
             <p><a>Central de Ajuda</a></p>
         </div>
         <br>
         <p>©Copyright G-Republica 2021</p>
     </footer>
 </body>
+
 </html>

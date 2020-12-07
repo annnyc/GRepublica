@@ -59,9 +59,9 @@
                 <form method="post" style="margin-left: 35px;
                         margin-right: 35px;
                         /* justify-content: center; */
-                        text-align: justify;"
-                >
+                        text-align: justify;">
                     <fieldset>
+
                         <legend>Encerrar conta</legend>
                     </fieldset>
 

@@ -8,11 +8,11 @@
 
 
                 <div class="card-body">
-                    <a href="#tab1" class="nav-link active"  role="tab" aria-controls="tab1" >
+                    <a href="{{ route('about') }}" class="nav-link active"  role="tab" aria-controls="tab1" >
                         <i class="mdi mdi-help-circle"></i> About
                     </a>
 
-                    <a href="#tab1" class="nav-link active"  role="tab" aria-controls="tab1" >
+                    <a href="{{ route('home') }}" class="nav-link active"  role="tab" aria-controls="tab1" >
                         <i class="mdi mdi-help-circle"></i> Voltar
                     </a>
                 </div>
