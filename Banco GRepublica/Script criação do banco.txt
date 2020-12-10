@@ -1,0 +1,79 @@
+/* Modelo Lógico - GRepublica: */
+
+CREATE TABLE USUARIO (
+    nome varchar(50) not null,
+    email varchar(150) not null,
+    sexo char(1),
+    cpf varchar(11) not null PRIMARY KEY,
+    telefone char(10),
+    possui_pro enum("s", "n") not null,
+    senha varchar(150) not null
+);
+
+CREATE TABLE ENDERECO (
+    estado char(2) not null,
+    cidade varchar(100) not null,
+    bairro varchar(100) not null,
+    rua varchar(100) not null,
+    numero varchar(10) not null,
+    complemento varchar(150) not null,
+    cep varchar(20) not null,
+    id_endereco int auto_increment PRIMARY KEY,
+    fk_cpf varchar(11)
+);
+
+CREATE TABLE DIFERENCIAIS (
+    diferencial text not null,
+    id_diferencial int auto_increment PRIMARY KEY
+);
+
+CREATE TABLE DIF_VAGAS (
+    id_difvagas int auto_increment PRIMARY KEY,
+    fk_id_diferencial int,
+    fk_idlocal int
+);
+
+CREATE TABLE GPRO (
+    mes enum("janeiro", "fevereiro", "marco", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro") not null,
+    ano int not null,
+    valor float(10,2) not null,
+    id_conta int auto_increment not null PRIMARY KEY,
+    fk_cpf varchar(11)
+);
+
+CREATE TABLE LOCAL (
+    valor_mensal float(10,2) not null,
+    nome_da_vaga text not null,
+    apartamento_livre enum("s", "n") not null,
+    esta_mobiliado enum("s", "n") not null,
+    vagas_de_garagem int not null,
+    cidade varchar(100) not null,
+    bairro varchar(100) not null,
+    rua varchar(100) not null,
+    numero varchar(10) not null,
+    estado char(2) not null,
+    complemento varchar(150),
+    cep varchar(20),
+    idlocal int auto increment PRIMARY KEY,
+    fk_cpf varchar(11)
+);
+ 
+ALTER TABLE ENDERECO ADD CONSTRAINT fk_end_usuario
+    FOREIGN KEY (fk_cpf)
+    REFERENCES USUARIO (cpf);
+ 
+ALTER TABLE DIF_VAGAS ADD CONSTRAINT fk_difvaga_diferencial
+    FOREIGN KEY (fk_id_diferencial)
+    REFERENCES DIFERENCIAIS (id_diferencial);
+ 
+ALTER TABLE DIF_VAGAS ADD CONSTRAINT fk_difvaga_local
+    FOREIGN KEY (fk_idlocal)
+    REFERENCES LOCAL (idlocal);
+ 
+ALTER TABLE GPRO ADD CONSTRAINT fk_gpro_usuario
+    FOREIGN KEY (fk_cpf)
+    REFERENCES USUARIO (cpf);
+ 
+ALTER TABLE LOCAL ADD CONSTRAINT fk_local_usuario
+    FOREIGN KEY (fk_cpf)
+    REFERENCES USUARIO (cpf);
