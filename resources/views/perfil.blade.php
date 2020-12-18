@@ -37,9 +37,9 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
-                                    <i class=""></i>
-                                    G-Contas </a>
+                                <a class="dropdown-item" href="{{ route('Gcontas') }}">
+                                    {{ __('G-Contas') }}
+                                </a>
                             </li>
                             <li>
                                 <a class="dropdown-item" href="{{ route('encerrarconta') }}">
@@ -55,7 +55,7 @@
         </div>
         <div class="col-md-9">
             <div class="profile-content">
-                <form method="post">
+                <form method="get" action="#">
                     <form class="needs-validation" novalidate>
                         <legend>Dados Pessoais</legend>
                         <br>

@@ -37,9 +37,9 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
-                                    <i class=""></i>
-                                    G-Contas </a>
+                                <a class="dropdown-item" href="{{ route('Gcontas') }}">
+                                    {{ __('G-Contas') }}
+                                </a>
                             </li>
                             <li>
                                 <a class="dropdown-item" href="{{ route('encerrarconta') }}">
@@ -55,7 +55,8 @@
         </div>
         <div class="col-md-9">
             <div class="profile-content">
-                <form method="post" style="margin-left: 5px;
+
+                <form method="get" action="#" style="margin-left: 5px;
                         margin-right: 35px;
                         /* justify-content: center; */
                         text-align: justify;">
@@ -75,14 +76,14 @@
                             <li class="list-group-item">Vestibulum at eros</li>
                         </ul>
                         <div class="card-body">
-                           
+
                             <a href="#" class="card-link">Register</a>
                         </div>
                     </div>
 
-                    
 
-                    
+
+
 
 
 

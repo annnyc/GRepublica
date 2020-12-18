@@ -2676,6 +2676,8 @@ textarea.form-control.is-invalid {
 
 .btn:not(:disabled):not(.disabled) {
   cursor: pointer;
+  margin: 3px; 
+  /* moviment */
 }
 
 a.btn.disabled,
