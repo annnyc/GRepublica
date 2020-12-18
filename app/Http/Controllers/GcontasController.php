@@ -4,12 +4,11 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class PerfilController extends Controller
+class GcontasController extends Controller
 {
+    
     public function index()
     {
-        return view('perfil');
+        return view('Gcontas');
     }
-
-    
 }

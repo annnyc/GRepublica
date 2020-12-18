@@ -38,9 +38,9 @@
                                </a>
                             </li>
                             <li>
-                                <a href="#">
-                                    <i class=""></i>
-                                    G-Contas </a>
+                                <a class="dropdown-item" href="{{ route('Gcontas') }}">
+                                    {{ __('G-Contas') }}
+                                </a>
                             </li>
                             <li>
                                 <a class="dropdown-item" href="{{ route('encerrarconta') }}">
