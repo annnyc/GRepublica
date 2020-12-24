@@ -1204,7 +1204,7 @@ pre code {
 
   .col-md-3 {
     flex: 0 0 25%;
-    max-width: 25%;
+    /* max-width: 25%; */
   }
 
   .col-md-4 {

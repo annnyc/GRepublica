@@ -73,8 +73,13 @@
                                     <a class="dropdown-item">
                                         {{ __('Seus anúncios') }}
                                     </a>
-                                    <a class="dropdown-item">
+                                    <!-- <a class="dropdown-item">
                                         {{ __('Configurações') }}
+                                    </a> -->
+                                    <a class="dropdown-item" href="{{ route ('settings') }}" >
+                                        
+                                        {{ __('Configurações') }}
+
                                     </a>
                                     <a class="dropdown-item">
                                         {{ __('Ajuda') }}
