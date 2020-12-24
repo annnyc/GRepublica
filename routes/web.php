@@ -45,6 +45,10 @@ Route::get('/Gcontas', function () {
     return view('Gcontas');
 })->name('GRepublica.Gcontas');
 
+Route::get('/settings', function () {
+    return view('settings');
+})->name('GRepublica.settings');
+
 
 
 
@@ -56,6 +60,8 @@ Route::get('/perfil', 'PerfilController@index')->name('perfil');
 Route::get('/assinatura', 'AssinaturaController@index')->name('assinatura');
 Route::get('/Gcontas', 'GcontasController@index')->name('Gcontas');
 Route::get('/encerrarconta', 'EncerrarcontaController@index')->name('encerrarconta');
+
+Route::get('/settings', 'SettingsController@index')->name('settings');
 
 Route::get('/about', 'AboutController@index')->name('about');
 Route::get('/faqs', 'FaqsController@index')->name('faqs');
