@@ -55,7 +55,7 @@
                 </a>
             </p>
 
-            <p><a>Atendimento</a></p>
+            <p><a>Central de Ajuda</a></p>
 
             <p>
                 <a href="{{ route('faqs') }}">
@@ -72,7 +72,7 @@
                     {{ __('G-Republica PRO') }}
                 </a>
             </p>
-            <p><a>Central de Ajuda</a></p>
+            <p><a>Termos</a></p>
         </div>
         <br>
         <p>©Copyright G-Republica 2021</p>
