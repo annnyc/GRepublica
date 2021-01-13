@@ -22,9 +22,12 @@ class HomeController extends Controller
         if(Auth::check()){ 
             return view('home');
         }
+        
 
         return redirect("/");
     }
+
+    
 }
 
 
