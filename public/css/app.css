@@ -77,9 +77,10 @@ body {
     background: url(../../img/pexels-jimmy-chan-1055297.png);
 }
 
-img {
+
+/* img {
     opacity: 0.5
-}
+} */
 
 [tabindex="-1"]:focus:not(:focus-visible) {
     outline: 0 !important;

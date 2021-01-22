@@ -24,7 +24,6 @@ Route::get('/assinatura', function () {
     return view('perfil');
 })->name('GRepublica.assinatura');
 
-
 Route::get('/encerrarconta', function () {
     return view('encerrarconta');
 })->name('GRepublica.encerrarconta');
@@ -49,20 +48,33 @@ Route::get('/settings', function () {
     return view('settings');
 })->name('GRepublica.settings');
 
-
+// Route::get('/home', function () {
+//     return view('home');
+// });
+Route::get('/VagasMoradia', function () {
+    return view('GRepublica.VagasMoradia');
+});
 
 
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/VagasMoradia', 'VagasMoradiaController@index')->name('VagasMoradia');
+
 Route::get('/perfil', 'PerfilController@index')->name('perfil');
+
 Route::get('/assinatura', 'AssinaturaController@index')->name('assinatura');
+
 Route::get('/Gcontas', 'GcontasController@index')->name('Gcontas');
+
 Route::get('/encerrarconta', 'EncerrarcontaController@index')->name('encerrarconta');
 
 Route::get('/settings', 'SettingsController@index')->name('settings');
 
 Route::get('/about', 'AboutController@index')->name('about');
+
 Route::get('/faqs', 'FaqsController@index')->name('faqs');
+
 Route::get('/GPro', 'GProController@index')->name('GPro');
