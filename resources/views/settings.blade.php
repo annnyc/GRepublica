@@ -173,9 +173,37 @@
     .mr-15 {
         margin-right: 15px;
     }
+    .navOP .notif {
+        display: block;
+        position: absolute;
+        top: -12px;
+        right: 3px;
+        line-height: 16px;
+        height: 16px;
+        padding: 0 5px;
+        font-family: Arial, sans-serif;
+        color: white;
+        text-shadow: 0 1px rgba(0, 0, 0, 0.25);
+        border: 1px solid;
+        border-radius: 10px;
+        box-shadow: inset 0 1px rgba(255, 255, 255, 0.3), 0 1px 1px rgba(0, 0, 0, 0.09);
+    }
+
+    .navOP .notif {
+        background: red;
+        border-color: red;
+    }
 </style>
 
 <div class="container-fluid">
+    <div class="navOP" style="margin-top: -62.5px;position: absolute;margin-left: 1095px;">
+        <nav>
+            <ul>
+                <a> <i class="fa fa-commenting-o" aria-hidden="true"></i><span class="notif">5</span></a>
+            </ul>
+        </nav>
+
+    </div>
     <!-- Row -->
     <div class="row">
         <div class="col-xl-12 pa-0">
@@ -232,11 +260,12 @@
                                             <div class="col-md-3 mb-3">
                                                 <form method="get" action="#" style="margin-left: 36px;">
                                                     <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-                                                    <label for="vehicle1"> I have a bike</label><br>
+                                                    <label for="vehicle1"> Notificar atividade de vagas.</label><br>
                                                     <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-                                                    <label for="vehicle2"> I have a car</label><br>
+                                                    <label for="vehicle2"> Notificar vencimento de Débito.</label><br>
                                                     <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-                                                    <label for="vehicle3"> I have a boat</label><br><br>
+                                                    <label for="vehicle3">Mostrar indice de visualização da vaga no email.</label><br><br>
+
                                                     <button class="btn btn-primary" type="submit">Atualizar</button>
                                                 </form>
                                             </div>
@@ -281,14 +310,31 @@
                                         <div class="card-body pa-15">
                                             <form method="get" action="#" style="margin-left: 36px;">
                                                 <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-                                                <label for="vehicle1"> I have a bike</label><br>
+                                                <label for="vehicle1">Desejo notificações de mensagens de terceiros no e-mail.</label><br>
                                                 <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-                                                <label for="vehicle2"> I have a car</label><br>
+                                                <label for="vehicle2">Deseja que mecanismos de pesquisa fora do G-Republica mostrem links para o seu perfil.</label><br>
                                                 <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-                                                <label for="vehicle3"> I have a boat</label><br><br>
+                                                <label for="vehicle3"> Ativar histórico de localização para seus dispositivos móveis.</label><br><br>
                                                 <button class="btn btn-primary" type="submit">Atualizar</button>
                                             </form>
 
+
+                                        </div>
+                                        <div class="card-body pa-15">
+                                            <p style="margin-left: 45px;">
+                                                Alterar senha, é recomendável usar uma senha forte que você não esteja usando em nenhum outro lugar
+                                            </p>
+                                            <form class="form-inline">
+                                                <div class="form-group mb-2">
+                                                    <label for="ConfigBloqueio" class="sr-only"></label>
+                                                    <input type="text" readonly class="form-control-plaintext" id="ConfigBloqueio">
+                                                </div>
+                                                <div class="form-group mx-sm-3 mb-2">
+                                                    <label for="inputBloqueio1" class="sr-only">Usuário</label>
+                                                    <input type="password" class="form-control" id="inputBloqueio1" placeholder="Senha">
+                                                </div>
+                                                <button type="submit" class="btn btn-primary mb-2">Confirmar</button>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
@@ -304,7 +350,7 @@
                                             </p>
                                             <form class="form-inline">
                                                 <div class="form-group mb-2">
-                                                    <label for="ConfigBloqueio" class="sr-only">ConfigBloqueio</label>
+                                                    <label for="ConfigBloqueio" class="sr-only"></label>
                                                     <input type="text" readonly class="form-control-plaintext" id="ConfigBloqueio">
                                                 </div>
                                                 <div class="form-group mx-sm-3 mb-2">

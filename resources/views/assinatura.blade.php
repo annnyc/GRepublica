@@ -1,6 +1,36 @@
 @extends('layouts.app')
 @section('content')
+<style>
+    .navOP .notif {
+        display: block;
+        position: absolute;
+        top: -12px;
+        right: 3px;
+        line-height: 16px;
+        height: 16px;
+        padding: 0 5px;
+        font-family: Arial, sans-serif;
+        color: white;
+        text-shadow: 0 1px rgba(0, 0, 0, 0.25);
+        border: 1px solid;
+        border-radius: 10px;
+        box-shadow: inset 0 1px rgba(255, 255, 255, 0.3), 0 1px 1px rgba(0, 0, 0, 0.09);
+    }
+
+    .navOP .notif {
+        background: red;
+        border-color: red;
+    }
+</style>
 <div class="container">
+    <div class="navOP" style="margin-top: -82px;position: absolute; margin-left: 975px;">
+        <nav>
+            <ul>
+                <a> <i class="fa fa-commenting-o" aria-hidden="true"></i><span class="notif">5</span></a>
+            </ul>
+        </nav>
+
+    </div>
 
     <div class="row profile">
         <div class="col-md-3">
