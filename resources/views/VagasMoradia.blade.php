@@ -352,19 +352,19 @@
                                     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" style="overflow: hidden;max-width: 580px;height: calc(100vh - 0px);">
                                         <div class="carousel-inner">
                                             <div class="carousel-item active">
-                                                <img class="d-block w-100" src="https://santamaria.com.br/arquivos/Imob21/15810/15810_1.jpg" alt="Primeiro Slide">
+                                                <img class="d-block w-100" src="#" alt="Primeiro Slide">
                                             </div>
                                             <div class="carousel-item">
-                                                <img class="d-block w-100" src="https://santamaria.com.br/arquivos/Imob21/15810/15810_2.jpg" alt="Segundo Slide">
+                                                <img class="d-block w-100" src="#" alt="Segundo Slide">
                                             </div>
                                             <div class="carousel-item">
-                                                <img class="d-block w-100" src="https://santamaria.com.br/arquivos/Imob21/15810/15810_3.jpg" alt="Terceiro Slide">
+                                                <img class="d-block w-100" src="#" alt="Terceiro Slide">
                                             </div>
                                             <div class="carousel-item">
-                                                <img class="d-block w-100" src="https://santamaria.com.br/arquivos/Imob21/15810/15810_7.jpg" alt="Quarto Slide">
+                                                <img class="d-block w-100" src="#" alt="Quarto Slide">
                                             </div>
                                             <div class="carousel-item">
-                                                <img class="d-block w-100" src="https://santamaria.com.br/arquivos/Imob21/15810/15810_8.jpg" alt="Quinto Slide">
+                                                <img class="d-block w-100" src="#" alt="Quinto Slide">
                                             </div>
                                         </div>
                                         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
